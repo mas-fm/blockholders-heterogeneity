@@ -1,0 +1,52 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+            &\multicolumn{1}{c}{Tobins\_Qt1}&\multicolumn{1}{c}{Tobins\_Qt1}&\multicolumn{1}{c}{Tobins\_Qt1}&\multicolumn{1}{c}{Tobins\_Qt1}&\multicolumn{1}{c}{Tobins\_Qt1}\\
+\hline
+institutional\_percent\_ownership&     -0.0253\sym{***}&     -0.0253\sym{***}&     -0.0253\sym{***}&     -0.0249\sym{***}&     -0.0250\sym{***}\\
+            &   [0.00703]         &   [0.00694]         &   [0.00688]         &   [0.00699]         &   [0.00682]         \\
+[1em]
+Sales\_Growth&    1.05e-08\sym{***}&    1.03e-08\sym{***}&    1.14e-08\sym{***}&    1.04e-08\sym{***}&    1.10e-08\sym{***}\\
+            &  [7.61e-10]         &  [8.74e-10]         &  [8.40e-10]         &  [7.62e-10]         &  [6.84e-10]         \\
+[1em]
+Firm\_Size   &       1.387\sym{***}&       1.389\sym{***}&       1.391\sym{***}&       1.369\sym{***}&       1.385\sym{***}\\
+            &     [0.148]         &     [0.150]         &     [0.150]         &     [0.144]         &     [0.149]         \\
+[1em]
+Fixed\_Assets&      -1.245\sym{*}  &      -1.224\sym{*}  &      -1.235\sym{*}  &      -1.205\sym{*}  &      -1.198\sym{*}  \\
+            &     [0.624]         &     [0.638]         &     [0.626]         &     [0.625]         &     [0.632]         \\
+[1em]
+Capital\_Expenditures&      0.0129         &      0.0261         &      0.0382         &     -0.0181         &      0.0343         \\
+            &     [1.188]         &     [1.192]         &     [1.186]         &     [1.175]         &     [1.183]         \\
+[1em]
+Leverage    &       0.946\sym{*}  &       0.947\sym{*}  &       0.945\sym{*}  &       0.945\sym{*}  &       0.946\sym{*}  \\
+            &     [0.516]         &     [0.518]         &     [0.520]         &     [0.517]         &     [0.522]         \\
+[1em]
+Amihud\_Illiquidity&       0.152         &       0.145         &       0.157         &       0.127         &       0.139         \\
+            &     [0.466]         &     [0.462]         &     [0.468]         &     [0.460]         &     [0.461]         \\
+[1em]
+total\_percent\_ownership&      0.0156\sym{**} &      0.0154\sym{**} &      0.0154\sym{**} &      0.0140\sym{**} &      0.0146\sym{**} \\
+            &   [0.00668]         &   [0.00653]         &   [0.00658]         &   [0.00652]         &   [0.00643]         \\
+[1em]
+Diversity\_identity&                     &       0.279         &                     &                     &                     \\
+            &                     &     [0.429]         &                     &                     &                     \\
+[1em]
+Diversity\_size&                     &                     &       0.378         &                     &                     \\
+            &                     &                     &     [0.237]         &                     &                     \\
+[1em]
+Diversity\_horizon&                     &                     &                     &       0.661\sym{**} &                     \\
+            &                     &                     &                     &     [0.286]         &                     \\
+[1em]
+Diversity\_Index&                     &                     &                     &                     &       0.504\sym{*}  \\
+            &                     &                     &                     &                     &     [0.277]         \\
+\hline
+Firm FE     &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Industry-Year FE&         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Observations&        3597         &        3597         &        3597         &        3597         &        3597         \\
+$ R^2 $     &       0.119         &       0.119         &       0.119         &       0.121         &       0.120         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Standard errors in brackets}\\
+\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

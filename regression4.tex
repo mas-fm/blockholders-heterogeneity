@@ -1,0 +1,52 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{lc*{5}{c}}
+\hline\hline
+            &            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+            & ExpectSign &\multicolumn{1}{c}{Tobins\_Q}&\multicolumn{1}{c}{Tobins\_Q}&\multicolumn{1}{c}{Tobins\_Q}&\multicolumn{1}{c}{Tobins\_Q}&\multicolumn{1}{c}{Tobins\_Q}\\
+\hline
+institutional\_percent\_ownership&    (+)     &     0.00134         &     0.00135         &     0.00146         &     0.00134         &     0.00143         \\
+            &            &      [0.22]         &      [0.22]         &      [0.24]         &      [0.22]         &      [0.23]         \\
+[1em]
+Sales\_Growth&    (+)     &    0.000318         &    0.000317         &    0.000316         &    0.000318         &    0.000316         \\
+            &            &      [1.15]         &      [1.15]         &      [1.14]         &      [1.15]         &      [1.15]         \\
+[1em]
+Firm\_Size   &    (-)     &      -0.907\sym{***}&      -0.907\sym{***}&      -0.904\sym{***}&      -0.906\sym{***}&      -0.904\sym{***}\\
+            &            &     [-6.26]         &     [-6.31]         &     [-6.25]         &     [-6.25]         &     [-6.27]         \\
+[1em]
+Fixed\_Assets&    (-)     &      -0.203         &      -0.234         &      -0.214         &      -0.209         &      -0.228         \\
+            &            &     [-0.71]         &     [-0.82]         &     [-0.75]         &     [-0.73]         &     [-0.80]         \\
+[1em]
+Capital\_Expenditures&    (+)     &       0.370         &       0.341         &       0.360         &       0.374         &       0.356         \\
+            &            &      [0.84]         &      [0.78]         &      [0.81]         &      [0.85]         &      [0.81]         \\
+[1em]
+Leverage    &    (-)     &       0.817\sym{***}&       0.817\sym{***}&       0.823\sym{***}&       0.816\sym{***}&       0.820\sym{***}\\
+            &            &      [4.31]         &      [4.33]         &      [4.36]         &      [4.30]         &      [4.34]         \\
+[1em]
+Amihud\_Illiquidity&    (-)     &      -1.983\sym{***}&      -1.903\sym{***}&      -1.978\sym{***}&      -1.983\sym{***}&      -1.951\sym{***}\\
+            &            &     [-3.19]         &     [-3.11]         &     [-3.20]         &     [-3.19]         &     [-3.17]         \\
+[1em]
+total\_percent\_ownership&    (-)     &    -0.00210         &    -0.00168         &    -0.00196         &    -0.00194         &    -0.00169         \\
+            &            &     [-0.33]         &     [-0.27]         &     [-0.31]         &     [-0.31]         &     [-0.27]         \\
+[1em]
+Diversity\_identity&    (-)     &                     &      -0.409\sym{*}  &                     &                     &                     \\
+            &            &                     &     [-1.91]         &                     &                     &                     \\
+[1em]
+Diversity\_size&    (-)     &                     &                     &      -0.201         &                     &                     \\
+            &            &                     &                     &     [-1.21]         &                     &                     \\
+[1em]
+Diversity\_horizon&    (-)     &                     &                     &                     &      -0.126         &                     \\
+            &            &                     &                     &                     &     [-1.07]         &                     \\
+[1em]
+Diversity\_Index&    (-)     &                     &                     &                     &                     &       0.243\sym{**} \\
+            &            &                     &                     &                     &                     &      [1.97]         \\
+\hline
+Firm FE     &            &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Industry-Year FE&            &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Observations&            &        4101         &        4101         &        4101         &        4101         &        4101         \\
+$ R^2 $     &            &       0.684         &       0.685         &       0.684         &       0.684         &       0.684         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize \textit{t} statistics in brackets}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}
